@@ -1,19 +1,18 @@
 # Task WEB
+![Logo Task](https://raw.githubusercontent.com/rafaelbatistaroque/projeto-task-web-reactjs/8e23a3285378b77fbd2d97451f5ede29ec3274ab/src/App/Assets/Logo.svg)
 
-<img src="https://img.shields.io/static/v1?label=.&message=React&color=61DAFB&style=for-the-badge&logo=React"/> <img src="https://img.shields.io/static/v1?label=.&message=JavaScript&color=F7DF1E&style=for-the-badge&logo=JavaScript"/>  <img src="https://img.shields.io/static/v1?label=.&message=CSS 3&color=1572B6&style=for-the-badge&logo=CSS3"/> <img src="https://img.shields.io/static/v1?label=.&message=Yarn&color=2C8EBB&style=for-the-badge&logo=Yarn"/>
-
-### ⌛ Status do Projeto
+## ⌛ Status do Projeto
 
 > 🚧 Em desenvolvimento... 👷🏼
-### 🎯  Objetivo
 
-> O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com React.
+## 🎯  Objetivo
 
+O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com React.
 
-### 📦 Pacotes
+## 📦 Pacotes
 
-> - [react-router-dom](https://reactrouter.com/web/guides/quick-start) - 6.0.0-beta.0
-> - [history](https://reactrouter.com/web/api/history) - 5.0.0
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start) - 6.0.0-beta.0
+- [history](https://reactrouter.com/web/api/history) - 5.0.0
 
 ## 🖥️ Features
 
