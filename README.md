@@ -1,5 +1,5 @@
-# Task WEB
-![Logo Task](https://raw.githubusercontent.com/rafaelbatistaroque/projeto-task-web-reactjs/8e23a3285378b77fbd2d97451f5ede29ec3274ab/src/App/Assets/Logo.svg)
+# ![Logo Task](https://raw.githubusercontent.com/rafaelbatistaroque/projeto-task-web-reactjs/8e23a3285378b77fbd2d97451f5ede29ec3274ab/src/App/Assets/Logo.svg) Organizar é nossa tarefa | WEB
+
 
 ## ⌛ Status do Projeto
 
