@@ -1,8 +1,17 @@
 import React from "react";
 import './App.css';
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
+import HomePage from "./views/Home/HomePage";
 
 function App() {
-  return <h1>Task - Organizar é nossa tarefa</h1>;
-}
+  return (
+    <>
+      <Header />
+      <HomePage />
+      <Footer />
+    </>
+  );
+    }
 
-export default App;
+    export default App;
