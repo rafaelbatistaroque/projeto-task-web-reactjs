@@ -5,7 +5,7 @@
 body{
   margin: 0;
   color: #333;
-  --tipo_principal: Helvetica, Arial, sans-serif;
+  --tipo_principal: Poppins, Helvetica, Arial, sans-serif;
   --tipo_secundario: 'Spectral', Georgia;
   font-family: var(--tipo_principal);
   padding-top: 4rem;
@@ -39,7 +39,7 @@ a{
 }
 
 .container{
-  max-width: 75rem;
-  padding: 0 1rem;
+  max-width: 90rem;
+  padding: 0 8rem;
   margin: 0 auto;
 }

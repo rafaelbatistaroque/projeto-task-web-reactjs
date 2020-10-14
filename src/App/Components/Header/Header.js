@@ -1,8 +1,29 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { ReactComponent as TaskLogo } from "../../Assets/Logo.svg";
+import { ReactComponent as NotificacaoIcone } from "../../Assets/notificacao.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  return <div className={`${styles.header} container`}>Header</div>;
+  return (
+    <header className={`${styles.header}`}>
+      <nav className={`${styles.nav} container`}>
+        <Link to="/" aria-label="Task - Home">
+          <TaskLogo />
+        </Link>
+        <div className={styles.menu}>
+          <Link to="/">Início</Link>
+          <Link to="/">Nova Tarefa</Link>
+          <Link to="/">Sincronizar</Link>
+          <div className={styles.notificacao}>
+            <Link to="/" data-notificacao="5">
+              <NotificacaoIcone />
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
