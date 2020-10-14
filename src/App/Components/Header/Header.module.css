@@ -1,11 +1,11 @@
 .header{
-  box-shadow: 0 4px 5px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .3);
   position: fixed;
   width: 100%;
-  background: #020873;
+  background: var(--cor-primaria);
   z-index: 100;
   top: 0;
-  border-bottom: .5rem solid #60D16F;
+  border-bottom: .5rem solid var(--cor-enfase);
 }
 
 .nav{
@@ -30,7 +30,7 @@
 }
 
 .menu a:hover{
-  color: #60D16F;
+  color: var(--cor-enfase);
   transition: .2s ease;
 }
 
@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #60D16F;
+  color: var(--cor-enfase);
   font-size: 14px;
   font-weight: 600;
   width: 22px;

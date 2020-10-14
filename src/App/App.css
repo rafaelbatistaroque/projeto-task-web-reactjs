@@ -1,13 +1,21 @@
+:root{
+  --cor-primaria: #020873;
+  --cor-secundaria: #575FFF;
+  --cor-enfase: #60D16F;
+  --cor-erro: #e65757;
+  --texto-preto: #333;
+  --font-principal: Poppins, Helvetica, Arial, sans-serif;
+  --font_secundaria: 'Spectral', Georgia;
+}
+
 *{
   box-sizing: border-box;
 }
 
 body{
   margin: 0;
-  color: #333;
-  --tipo_principal: Poppins, Helvetica, Arial, sans-serif;
-  --tipo_secundario: 'Spectral', Georgia;
-  font-family: var(--tipo_principal);
+  color: var(--texto-preto);
+  font-family: var(--font-principal);
   padding-top: 4rem;
 }
 
@@ -29,13 +37,13 @@ img{
 button{
   display: block;
   font-size: 1rem;
-  font-family: var(--tipo_principal);
-  color: #333;
+  font-family: var(--font-principal);
+  color: var(--texto-preto);
 }
 
 a{
   text-decoration: none;
-  color: #333;
+  color: var(--texto-preto);
 }
 
 .container{
