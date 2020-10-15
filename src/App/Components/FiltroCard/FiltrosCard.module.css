@@ -1,0 +1,68 @@
+.filtroCardLista{
+  width: 100%;
+  height: 7rem;
+  overflow-y: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.filtroCardLista::-webkit-scrollbar{
+  --cor-fundo-scroll: #f2f2f2;
+  height: 14px;
+  background:  var(--cor-fundo-scroll);
+}
+.filtroCardLista::-webkit-scrollbar-thumb{
+  width: 8px;
+  border-radius: 5px;
+  background-color: #d5d5d5;
+  border-top: 3px solid var(--cor-fundo-scroll);
+  border-bottom: 3px solid var(--cor-fundo-scroll);
+}
+
+.filtroCard{
+  outline: none;
+  border: none;
+  margin: 0 2rem 0 0;
+  min-width: 10rem;
+  height: 60px;
+  background: var(--cor-secundaria);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, .3);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: .2s ease-out;
+}
+
+.filtroCard:last-child{
+  margin: 0;
+}
+
+.filtroCard::before{
+  content: url("../../Assets/filtro.svg");
+}
+
+.filtroCard::after{
+  content: attr(data-filtro);
+  color: white;
+  font-weight: 500;
+}
+
+.filtroCard:hover,
+.filtroCard:focus{
+  cursor: pointer;
+  background: var(--cor-enfase);
+}
+
+@media (max-width: 540px){
+  .filtroCardLista::-webkit-scrollbar{
+    display: none;
+  }
+
+}
