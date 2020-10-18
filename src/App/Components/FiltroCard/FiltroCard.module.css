@@ -35,4 +35,5 @@
 .filtroCard:focus{
   cursor: pointer;
   background: var(--cor-enfase);
+  transform: scale(1.05);
 }

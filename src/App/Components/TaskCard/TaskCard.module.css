@@ -1,0 +1,58 @@
+.taskCard{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  min-width: 10rem;
+  min-height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.25rem;
+  background-color: white;
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, .25);
+  margin-right: 1rem;
+  transition: .2s ease-out;
+}
+
+.taskCard:last-child{
+  margin: 0;
+}
+
+.taskCard:hover{
+  transform: scale(1.05);
+}
+
+.taskCard:active{
+  background: #e1e1e1;
+}
+
+.cabecalhoTaskCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecalhoTaskCard svg{
+  width: 6rem;
+  height: 6rem;
+  margin-top: 1rem;
+  padding: .4rem;
+}
+
+.cabecalhoTaskCard span{
+  padding: .2rem;
+  font-size: .825rem;
+}
+.prazoEStatusTaskCard{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: .2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.prazoEStatusTaskCard svg{
+  padding: .2rem;
+}
