@@ -18,8 +18,27 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
 
 - ❌ Front-WEB
   - ✔️ Estrutura inicial
-  - ✔️ Assets
+    - ✔️ Assets
+    - ✔️ Header
+    - ✔️ Footer
   - ❌ Componentes
+    - ✔️ Lista de Filtros
+    - ✔️ Cards de Tarefas
+    - ✔️ Notificação
+    - ❌ Form Adicionar/editar Tarefa
+    - ❌ ...
+  - ❌ Comunicação API
+    - ❌ Obter tarefas com/sem filtro
+    - ❌ Adicionar tarefa
+    - ❌ Editar tarefa
+    - ❌ Excluir tarefa
+    - ❌ Sincronizar tarefa
   - ❌ Rotas
+    - ❌ Página Home
+    - ❌ Página Adicionar Tarefa
+    - ❌ Página Sincronizar Tarefa
   - ❌ Pages
+    - ✔️ Home
+    - ❌ Adicionar Tarefa
+    - ❌ Sincronizar Tarefa
   - ❌ ...
