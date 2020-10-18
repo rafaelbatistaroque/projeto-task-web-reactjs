@@ -1,0 +1,33 @@
+:root{
+  --cor-fundo-scroll: #f2f2f2;
+}
+
+.listaFiltroCards{
+  width: 100%;
+  height: 7rem;
+  overflow-y: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.listaFiltroCards::-webkit-scrollbar{
+  height: 14px;
+  background:  var(--cor-fundo-scroll);
+}
+
+.listaFiltroCards::-webkit-scrollbar-thumb{
+  width: 8px;
+  border-radius: 5px;
+  background-color: #d5d5d5;
+  border-top: 3px solid var(--cor-fundo-scroll);
+  border-bottom: 3px solid var(--cor-fundo-scroll);
+}
+
+@media (max-width: 540px){
+  .listaFiltroCards::-webkit-scrollbar{
+    display: none;
+  }
+
+}

@@ -1,11 +1,13 @@
 import React from "react";
-import FiltrosCard from "../../Components/FiltroCard/FiltrosCard";
+import ListaFiltroCards from "../../Components/ListaFiltroCards/ListaFiltroCards";
+import ListaTaskCards from "../../Components/ListaTaskCards/ListaTaskCards";
 import styles from "./HomePage.module.css";
 
 const Home = () => {
    return (
      <section className={`${styles.home}`}>
-       <FiltrosCard />
+       <ListaFiltroCards />
+       <ListaTaskCards />
      </section>
    );
 };
