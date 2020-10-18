@@ -3,6 +3,7 @@
   --cor-secundaria: #575FFF;
   --cor-enfase: #60D16F;
   --cor-erro: #e65757;
+  --cor-background:#f8f8f8;
   --texto-preto: #333;
   --font-principal: Poppins, Helvetica, Arial, sans-serif;
   --font_secundaria: 'Spectral', Georgia;
@@ -17,10 +18,12 @@ body{
   color: var(--texto-preto);
   font-family: var(--font-principal);
   padding-top: 4rem;
+  background:  var(--cor-background);
 }
 
 h1,h2,h3,h4,p{
   margin: 0;
+  color:var(--texto-preto)
 }
 
 ul,li{
