@@ -1,6 +1,6 @@
 import React from "react";
 import { TaskContext } from "../../Hooks/TaskContext";
-import TaskCard from "../TaskCard/TaskCard";
+import TaskCard from "./TaskCard/TaskCard";
 import styles from "./ListaTaskCards.module.css";
 
 const ListaTaskCards = () => {

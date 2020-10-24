@@ -1,5 +1,5 @@
 import React from "react";
-import { TaskContext } from "../../Hooks/TaskContext";
+import { TaskContext } from "../../../Hooks/TaskContext";
 import styles from "./FiltroCard.module.css";
 
 const FiltroCard = ({ titulo, endPoint }) => {
