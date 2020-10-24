@@ -4,6 +4,7 @@
   color: var(--cor-primaria);
   font-size: 1.35rem;
 }
+
 .listaTask h1::after{
   content: "";
   flex: 1;
@@ -13,7 +14,9 @@
 }
 
 .listaTaskCards{
+  padding: .2rem;
+  min-width: 600px;
   display: flex;
-  justify-content: center;
-  margin-top: 2.25rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
