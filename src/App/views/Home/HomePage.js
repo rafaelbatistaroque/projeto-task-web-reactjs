@@ -1,6 +1,6 @@
 import React from "react";
-import ListaFiltroCards from "../../Components/ListaFiltroCards/ListaFiltroCards";
-import ListaTaskCards from "../../Components/ListaTaskCards/ListaTaskCards";
+import ListaFiltroCards from "../../components/ListaFiltroCards/ListaFiltroCards";
+import ListaTaskCards from "../../components/ListaTaskCards/ListaTaskCards";
 import styles from "./HomePage.module.css";
 
 const Home = () => {

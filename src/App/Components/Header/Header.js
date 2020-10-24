@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
-import { ReactComponent as TaskLogo } from "../../Assets/Logo.svg";
-import { ReactComponent as NotificacaoIcone } from "../../Assets/notificacao.svg";
+import { ReactComponent as TaskLogo } from "../../assets/Logo.svg";
+import { ReactComponent as NotificacaoIcone } from "../../assets/notificacao.svg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
