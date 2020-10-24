@@ -28,7 +28,7 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ❌ Form Adicionar/editar Tarefa
     - ❌ ...
   - ❌ Comunicação API
-    - ❌ Obter tarefas com/sem filtro
+    - ✔️ Obter tarefas com/sem filtro
     - ❌ Adicionar tarefa
     - ❌ Editar tarefa
     - ❌ Excluir tarefa

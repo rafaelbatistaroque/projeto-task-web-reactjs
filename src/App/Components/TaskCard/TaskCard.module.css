@@ -3,7 +3,8 @@
   border: none;
   cursor: pointer;
   min-width: 10rem;
-  min-height: 13rem;
+  max-width: 12rem;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,12 +12,8 @@
   border-radius: 1.25rem;
   background-color: white;
   box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, .25);
-  margin-right: 1rem;
+  margin: .5rem .5rem;
   transition: .2s ease-out;
-}
-
-.taskCard:last-child{
-  margin: 0;
 }
 
 .taskCard:hover{
@@ -35,24 +32,41 @@
 }
 
 .cabecalhoTaskCard svg{
-  width: 6rem;
-  height: 6rem;
+  width: 4.5rem;
+  height: 4.5rem;
   margin-top: 1rem;
   padding: .4rem;
 }
 
 .cabecalhoTaskCard span{
   padding: .2rem;
-  font-size: .825rem;
+  font-size: .725rem;
+  text-align: center;
 }
+
 .prazoEStatusTaskCard{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: .2rem 1rem;
+  padding: .2rem .5rem;
   margin-bottom: 1rem;
 }
 
 .prazoEStatusTaskCard svg{
-  padding: .2rem;
+  padding: .3rem;
+}
+
+.prazo span{
+  color: #7A7A7A;
+  display: block;
+  text-transform: uppercase;
+  text-align: start;
+}
+.prazo span:first-child{
+  font-weight: 300;
+  line-height: .2rem;
+}
+
+.prazo span:last-child{
+  font-weight: bold;
 }
