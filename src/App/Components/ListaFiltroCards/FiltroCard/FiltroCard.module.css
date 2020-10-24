@@ -22,7 +22,7 @@
 }
 
 .filtroCard::before{
-  content: url("../../Assets/filtro.svg");
+  content: url("../../../Assets/filtro.svg");
 }
 
 .filtroCard::after{

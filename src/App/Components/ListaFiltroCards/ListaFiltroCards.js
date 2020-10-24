@@ -1,5 +1,5 @@
 import React from "react";
-import FiltroCard from "../FiltroCard/FiltroCard";
+import FiltroCard from "./FiltroCard/FiltroCard";
 import styles from "./ListaFiltroCards.module.css";
 
 const ListaFiltroCards = () => {
