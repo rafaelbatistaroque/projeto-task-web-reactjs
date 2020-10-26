@@ -2,11 +2,11 @@ import React from "react";
 import { TaskContext } from "../../../hooks/TaskContext";
 import styles from "./FiltroCard.module.css";
 
-const FiltroCard = ({ titulo, endPoint }) => {
+const FiltroCard = ({ titulo, ...rest }) => {
   const { obterTarefas } = React.useContext(TaskContext);
 
   async function handleTask() {
-    await obterTarefas(endPoint, "44:44:44:44:44:44");
+    await obterTarefas({ titulo, ...rest });
   }
 
   return (

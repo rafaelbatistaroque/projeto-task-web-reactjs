@@ -4,10 +4,10 @@ import TaskCard from "./TaskCard/TaskCard";
 import styles from "./ListaTaskCards.module.css";
 
 const ListaTaskCards = () => {
-  const { tarefas } = React.useContext(TaskContext);
+  const { tarefas, tituloTipoTarefa } = React.useContext(TaskContext);
   return (
     <div className={`${styles.listaTask} container`}>
-      <h1>TAREFAS</h1>
+      <h1>{tituloTipoTarefa}</h1>
       <div className={styles.listaTaskCards}>
         {tarefas && tarefas.map((tarefa) => <TaskCard key={tarefa._id} {...tarefa} />)}
       </div>

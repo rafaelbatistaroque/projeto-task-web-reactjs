@@ -1,0 +1,30 @@
+.notificacao span{
+  margin: 0 0 0 1rem;
+}
+
+.notificacao span[data-notificacao]{
+  cursor: pointer;
+  position: relative;
+}
+
+.notificacao span[data-notificacao]::after{
+  content: attr(data-notificacao);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-enfase);
+  font-size: 14px;
+  font-weight: 600;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  transition: .3s ease-out;
+}
+
+.notificacao span[data-notificacao]:hover::after{
+  width: 3rem;
+}

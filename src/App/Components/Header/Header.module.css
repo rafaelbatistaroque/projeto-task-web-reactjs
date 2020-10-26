@@ -33,31 +33,3 @@
   color: var(--cor-enfase);
   transition: .2s ease;
 }
-
-.notificacao a{
-  display: flex;
-  margin: 0 0 0 1rem;
-  position: relative;
-}
-
-.notificacao a::after{
-  content: attr(data-notificacao);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--cor-enfase);
-  font-size: 14px;
-  font-weight: 600;
-  width: 22px;
-  height: 22px;
-  background: white;
-  border-radius: 10px;
-  position: absolute;
-  top: 7px;
-  left: 25px;
-  transition: .3s ease-out;
-}
-
-[data-notificacao]:hover::after{
-  width: 3rem;
-}
