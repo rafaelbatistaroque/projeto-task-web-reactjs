@@ -13,7 +13,7 @@ const TaskCard = ({ titulo, quando, tipo, feito }) => {
       </div>
       <div className={`${styles.prazoEStatusTaskCard}`}>
         <div className={styles.prazo}>
-          <span>{format(new Date(quando), "dd")}</span>
+          <span>{new Date(quando).getUTCDate()}</span>
           <span>{format(new Date(quando), "MMM", { locale: ptBR })}</span>
         </div>
         {IconesStatusTarefa[feito]}
