@@ -29,7 +29,8 @@
   margin: 0 .5rem;
 }
 
-.menu a:hover{
+.menu a:hover,
+.menu a.active{
   color: var(--cor-enfase);
   transition: .2s ease;
 }

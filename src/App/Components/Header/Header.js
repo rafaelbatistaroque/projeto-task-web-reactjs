@@ -1,20 +1,22 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { ReactComponent as TaskLogo } from "../../assets/Logo.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Notificacao from "../Notificacao/Notificacao";
 
 const Header = () => {
   return (
     <header className={`${styles.header}`}>
       <nav className={`${styles.nav} container`}>
-        <Link to="/" aria-label="Task - Home">
+        <NavLink to="/" aria-label="Task - Home">
           <TaskLogo />
-        </Link>
+        </NavLink>
         <div className={`${styles.menu} animarFadeInDeCima`}>
-          <Link to="/">Início</Link>
-          <Link to="/">Nova Tarefa</Link>
-          <Link to="/">Sincronizar</Link>
+          <NavLink to="/" end activeClassName={styles.active}>         
+            Início
+          </NavLink>
+          <NavLink to="/task-detalhes" activeClassName={styles.active}>Nova Tarefa</NavLink>
+          <NavLink to="/sincronizar" activeClassName={styles.active}>Sincronizar</NavLink>
           <Notificacao />
         </div>
       </nav>
