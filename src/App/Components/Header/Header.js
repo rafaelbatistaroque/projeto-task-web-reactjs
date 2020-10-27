@@ -11,7 +11,7 @@ const Header = () => {
         <Link to="/" aria-label="Task - Home">
           <TaskLogo />
         </Link>
-        <div className={styles.menu}>
+        <div className={`${styles.menu} animarFadeInDeCima`}>
           <Link to="/">Início</Link>
           <Link to="/">Nova Tarefa</Link>
           <Link to="/">Sincronizar</Link>

@@ -7,11 +7,11 @@ import { IconesTipoTarefa, IconesStatusTarefa } from "../../../utils/IconesTaref
 const TaskCard = ({ titulo, quando, tipo, feito }) => {
   return (
     <button className={`${styles.taskCard}`}>
-      <div className={`${styles.cabecalhoTaskCard}`}>
+      <div className={`${styles.cabecalhoTaskCard} animarFadeInDeCima`}>
         {IconesTipoTarefa[tipo]}
         <span>{titulo}</span>
       </div>
-      <div className={`${styles.prazoEStatusTaskCard}`}>
+      <div className={`${styles.prazoEStatusTaskCard} animarFadeInDeCima`}>
         <div className={styles.prazo}>
           <span>{new Date(quando).getUTCDate()}</span>
           <span>{format(new Date(quando), "MMM", { locale: ptBR })}</span>

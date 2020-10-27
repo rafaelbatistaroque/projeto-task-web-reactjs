@@ -12,7 +12,7 @@
   border-radius: 1.25rem;
   background-color: white;
   box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, .25);
-  margin: .5rem .5rem;
+  margin: .5rem 1rem .5rem 0;
   transition: .2s ease-out;
 }
 
@@ -22,6 +22,10 @@
 
 .taskCard:active{
   background: #e1e1e1;
+}
+
+.taskCard:last-child{
+  margin-right: 0;
 }
 
 .cabecalhoTaskCard{
