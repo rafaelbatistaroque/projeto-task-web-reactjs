@@ -4,7 +4,7 @@ import './App.css';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { Task } from "./hooks/TaskContext";
-import HomePage from "./views/Home/HomePage";
+import Rotas from "./routes/Rotas";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Task>
           <Header />
-          <HomePage />
+          <Rotas />
           <Footer />
         </Task>
       </BrowserRouter>
