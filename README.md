@@ -25,6 +25,7 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Lista de Filtros
     - ✔️ Cards de Tarefas
     - ✔️ Notificação
+    - ✔️ Lista de ícones de tipo Tarefa 
     - ❌ Form Adicionar/editar Tarefa
     - ❌ ...
   - ❌ Comunicação API ([Clique Aqui](https://github.com/rafaelbatistaroque/projeto_api_task))
