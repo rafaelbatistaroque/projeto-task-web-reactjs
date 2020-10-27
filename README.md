@@ -33,10 +33,11 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ❌ Editar tarefa
     - ❌ Excluir tarefa
     - ❌ Sincronizar tarefa
-  - ❌ Rotas
-    - ❌ Página Home
-    - ❌ Página Adicionar Tarefa
-    - ❌ Página Sincronizar Tarefa
+  - ✔️ Rotas
+    - ✔️ Página Home
+    - ✔️ Página Adicionar Tarefa
+    - ✔️ Página Sincronizar Tarefa
+    - ✔️ Menu - navegação
   - ❌ Pages
     - ✔️ Home
     - ❌ Adicionar Tarefa
