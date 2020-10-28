@@ -1,10 +1,12 @@
 .tipoTarefa{
   cursor: pointer;
   outline: none;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   background: transparent;
   border: none;
+  
+  transition: .2s ease-out;
 }
 
 .tipoTarefa svg{
@@ -13,8 +15,13 @@
   height: 3rem;
 }
 
+.tipoTarefa:hover{
+  transform: scale(1.15);
+}
+
 .tipoTarefa:hover svg > *:first-child,
 .tipoTarefa:focus svg > *:first-child,
 .tipoTarefa:active svg > *:first-child{
   fill: var(--cor-enfase);
+  transition: .2s ease-out;
 }

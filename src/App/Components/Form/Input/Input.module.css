@@ -1,0 +1,23 @@
+.inputContainer{
+  position: relative;
+  margin: 2rem 0;
+}
+
+.inputElement{
+  background: transparent;
+}
+
+.inputLabel{
+  padding-bottom: .2rem;
+}
+
+.inputElement,
+.inputLabel{
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+.inputElement:invalid
+.inputElement:not(:focus){
+  border-bottom: 2px solid var(--cor-erro);
+}

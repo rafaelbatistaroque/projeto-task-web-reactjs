@@ -1,0 +1,62 @@
+.form{
+  display: block;
+  margin: 0 auto;
+
+  background: white;
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, .25);
+  border-radius: 1.25rem;
+  max-width: 50rem;
+  min-width: 30rem;
+  padding: .5rem 3rem;
+  margin-top: 2rem;
+}
+
+input, textarea{
+  border: 0;
+  border-bottom: 2px solid var(--texto-preto);
+  outline: none;
+  transition: .2s ease-in-out;
+  resize: none;
+  font-size: 1.5rem;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+label{
+  top: 0; left: .5rem; right: 0;
+  color: var(--texto-preto);
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  cursor: text;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
+}
+
+label,input, textarea{
+  width: 100%;
+}
+
+textarea:valid,
+textarea:focus,
+input:valid,
+input:focus{
+  border-bottom: 2px solid var(--cor-secundaria);
+}
+
+textarea:valid + label,
+textarea:focus + label,
+input:valid + label,
+input:focus + label{
+  color: var(--cor-secundaria);
+  font-size: .8rem;
+  top: -30px; left: 0;
+  pointer-events: none;
+}
+
+textarea:invalid,
+textarea::not(:focus)
+input:invalid,
+input::not(:focus){
+  border-bottom: 2px solid var(--cor-erro);
+}
