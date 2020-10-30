@@ -16,8 +16,3 @@
   height: 2.5rem;
   font-size: 1rem;
 }
-
-.inputElement:invalid
-.inputElement:not(:focus){
-  border-bottom: 2px solid var(--cor-erro);
-}

@@ -1,0 +1,23 @@
+.button{
+  width: 8.5rem;
+  border-radius: 4px;
+  color: white;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  padding: .5rem 1.5rem;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: .2s ease-out;
+  margin-right: 1rem;
+  letter-spacing: .08rem;
+  text-align: center;
+}
+
+.button:hover{
+  opacity: .75;
+}
+
+.button:last-child{
+  margin-right: 0;
+}

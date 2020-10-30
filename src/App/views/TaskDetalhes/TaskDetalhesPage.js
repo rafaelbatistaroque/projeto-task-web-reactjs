@@ -5,10 +5,10 @@ import Form from "../../components/Form/Form";
 
 const TaskDetalhesPage = () => {
   return (
-    <div className={`${styles.taskDetalhesPage} container`}>
+    <section className={`${styles.taskDetalhesPage} container`}>
       <ListaTipoTarefa />
       <Form />
-    </div>
+    </section>
   );
 };
 

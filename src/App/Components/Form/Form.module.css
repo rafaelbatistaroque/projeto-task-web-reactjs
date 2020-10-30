@@ -60,3 +60,10 @@ input:invalid,
 input::not(:focus){
   border-bottom: 2px solid var(--cor-erro);
 }
+
+.buttonsContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0;
+}

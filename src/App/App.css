@@ -44,6 +44,14 @@ button{
   color: var(--texto-preto);
 }
 
+button.enfase{
+  background: var(--cor-enfase);
+}
+
+button.normal{
+  background: var(--cor-secundaria);
+}
+
 a{
   text-decoration: none;
   color: var(--texto-preto);
