@@ -1,3 +1,4 @@
+.tipoTarefaAtiva,
 .tipoTarefa{
   cursor: pointer;
   outline: none;
@@ -9,6 +10,7 @@
   transition: .2s ease-out;
 }
 
+.tipoTarefaAtiva svg,
 .tipoTarefa svg{
   align-items: center;
   width: 3rem;
@@ -24,4 +26,8 @@
 .tipoTarefa:active svg > *:first-child{
   fill: var(--cor-enfase);
   transition: .2s ease-out;
+}
+
+.tipoTarefaAtiva svg > *:first-child{
+  fill: var(--cor-enfase);
 }

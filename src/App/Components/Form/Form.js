@@ -7,18 +7,36 @@ import Button from "./Button/Button";
 import Checkbox from "./Checkbox/Checkbox";
 import useForm from "../../hooks/useForm";
 import ListaTipoTarefa from "../ListaTipoTarefa/ListaTipoTarefa";
+import { CRIAR_TASK } from "../../services/api/api-task";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
+  let idTarefa = false;
   const tipoTarefa = useForm();
   const titulo = useForm();
   const descricao = useForm();
   const data = useForm();
   const status = useForm();
+  const navegarPara = useNavigate();
+
   let hoje = format(new Date(), "yyyy-MM-dd");
 
-  function tratarAdicionar(e) {
+  async function tratarAdicionar(e) {
     e.preventDefault();
-    console.log("tarefa adicionada");
+
+    let { url, options } = CRIAR_TASK({
+      enderecomac: "44:44:44:44:44:44",
+      tipo: tipoTarefa.valor,
+      titulo: titulo.valor,
+      descricao: descricao.valor,
+      quando: data.valor,
+    });
+
+    const promise = await fetch(url, options);
+    const resposta = await promise.json();
+
+    console.log(resposta);
+    navegarPara("/");
   }
 
   return (
@@ -36,7 +54,7 @@ const Form = () => {
         />
         <Input nomeInput="data" minParaData={hoje} requirido={true} tipoInput="date" {...data} />
         <div className={styles.buttonsContainer}>
-          <Checkbox label="Concluída" nomeCheckbox="statusTarefa" {...status} />
+          {idTarefa && <Checkbox label="Concluída" nomeCheckbox="statusTarefa" {...status} />}
           <Button tipoButton="submit" estiloBotao="enfase" tituloBotao="Adicionar" />
           <Button tipoButton="button" tituloBotao="Cancelar" />
         </div>

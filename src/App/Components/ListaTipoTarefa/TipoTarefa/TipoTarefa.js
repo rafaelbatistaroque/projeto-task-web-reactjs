@@ -1,14 +1,19 @@
 import React from "react";
 import styles from "./TipoTarefa.module.css";
 
-const TipoTarefa = ({ Icone, tipo, setValor }) => {
+const TipoTarefa = ({ Icone, tipo, setValor, valor }) => {
   function handleClick({ currentTarget }) {
     setValor(currentTarget.dataset.tipo);
   }
 
   return (
-    <button className={styles.tipoTarefa} data-tipo={tipo} onClick={handleClick}>
+    <button
+      className={`${tipo == valor ? styles.tipoTarefaAtiva : styles.tipoTarefa}`}
+      data-tipo={tipo}
+      onClick={handleClick}
+    >
       {Icone}
+      {tipo == valor && valor}
     </button>
   );
 };
