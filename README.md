@@ -25,11 +25,12 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Lista de Filtros
     - ✔️ Cards de Tarefas
     - ✔️ Notificação
-    - ❌ Form Adicionar/editar Tarefa
+    - ✔️ Lista de ícones de tipo Tarefa 
+    - ✔️ Form Adicionar/editar Tarefa
     - ❌ ...
   - ❌ Comunicação API ([Clique Aqui](https://github.com/rafaelbatistaroque/projeto_api_task))
     - ✔️ Obter tarefas com/sem filtro
-    - ❌ Adicionar tarefa
+    - ✔️ Adicionar tarefa
     - ❌ Editar tarefa
     - ❌ Excluir tarefa
     - ❌ Sincronizar tarefa
@@ -40,6 +41,6 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Menu - navegação
   - ❌ Pages
     - ✔️ Home
-    - ❌ Adicionar Tarefa
+    - ✔️ Adicionar Tarefa
     - ❌ Sincronizar Tarefa
   - ❌ ...

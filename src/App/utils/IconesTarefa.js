@@ -15,21 +15,22 @@ import { ReactComponent as ViagemIcon } from "../assets/viagem.svg";
 import { ReactComponent as ConcluidaIcon } from "../assets/concluida.svg";
 import { ReactComponent as CanceladaIcon } from "../assets/cancelada.svg";
 
-export const IconesTipoTarefa = {
-  1: <AcademiaIcon />,
-  2: <AniversarioIcon />,
-  3: <AutoCenterIcon />,
-  4: <CalendarioIcon />,
-  5: <CompraWebIcon />,
-  6: <EsporteIcon />,
-  7: <EstudarIcon />,
-  8: <LancheIcon />,
-  9: <LazerIcon />,
-  10: <MercadoIcon />,
-  11: <SalaoIcon />,
-  12: <TrabalhoIcon />,
-  13: <ViagemIcon />,
-};
+export const IconesTipoTarefa = [
+  null,
+  <AcademiaIcon />,
+  <AniversarioIcon />,
+  <AutoCenterIcon />,
+  <CalendarioIcon />,
+  <CompraWebIcon />,
+  <EsporteIcon />,
+  <EstudarIcon />,
+  <LancheIcon />,
+  <LazerIcon />,
+  <MercadoIcon />,
+  <SalaoIcon />,
+  <TrabalhoIcon />,
+  <ViagemIcon />,
+];
 
 export const IconesStatusTarefa = {
   true: <ConcluidaIcon />,

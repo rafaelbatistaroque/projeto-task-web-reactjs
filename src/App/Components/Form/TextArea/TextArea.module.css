@@ -1,0 +1,21 @@
+.textAreaContainer{
+  position: relative;
+  margin: 2rem 0;
+}
+
+.inputTextArea{
+  background: #f1f1f1;
+  resize: none;
+  font-size: 1.2rem;
+  padding: .5rem;
+}
+
+.inputTextArea:valid + .textAreaLabel,
+.inputTextArea:focus + .textAreaLabel{
+  top: -25px; left: 0;
+}
+
+.inputTextArea:invalid
+.inputTextArea:not(:focus){
+  border-bottom: 2px solid var(--cor-erro);
+}
