@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./TipoTarefa.module.css";
 
-const TipoTarefa = ({ Icone, tipo }) => {
+const TipoTarefa = ({ Icone, tipo, setValor }) => {
   function handleClick({ currentTarget }) {
-    console.log(currentTarget.dataset.tipo); //TODO
+    setValor(currentTarget.dataset.tipo);
   }
 
   return (

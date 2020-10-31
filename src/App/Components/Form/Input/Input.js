@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Input.module.css";
 
-const Input = ({ label, tipoInput = "text", minParaData, nomeInput, value, requirido = false, onChange }) => {
+const Input = ({ label, tipoInput = "text", minParaData, valor, nomeInput, requirido = false, onChange }) => {
   return (
     <div className={styles.inputContainer}>
       <input
@@ -9,8 +9,8 @@ const Input = ({ label, tipoInput = "text", minParaData, nomeInput, value, requi
         type={tipoInput}
         id={nomeInput}
         name={nomeInput}
+        value={valor}
         min={minParaData}
-        value={value}
         onChange={onChange}
         required={requirido}
       />
