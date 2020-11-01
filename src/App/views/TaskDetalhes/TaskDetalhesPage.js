@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./TaskDetalhesPage.module.css";
-import Form from "../../components/Form/Form";
+import { Outlet } from "react-router-dom";
 
 const TaskDetalhesPage = () => {
   return (
     <section className={`${styles.taskDetalhesPage} container`}>
-      <Form />
+      <Outlet />
     </section>
   );
 };
