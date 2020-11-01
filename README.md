@@ -31,7 +31,7 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
   - ❌ Comunicação API ([Clique Aqui](https://github.com/rafaelbatistaroque/projeto_api_task))
     - ✔️ Obter tarefas com/sem filtro
     - ✔️ Adicionar tarefa
-    - ❌ Editar tarefa
+    - ✔️ Editar tarefa
     - ❌ Excluir tarefa
     - ❌ Sincronizar tarefa
   - ✔️ Rotas
