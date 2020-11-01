@@ -13,7 +13,7 @@ const TaskCard = ({ titulo, quando, tipo, feito, indexTarefa }) => {
   }
 
   return (
-    <button type="button" className={`${styles.taskCard}`} onClick={handleEditarTarefa}>
+    <button type="button" className={`${styles.taskCard} sombra-box`} onClick={handleEditarTarefa}>
       <div className={`${styles.cabecalhoTaskCard} animarFadeInDeCima`}>
         {IconesTipoTarefa[tipo]}
         <span>{titulo}</span>

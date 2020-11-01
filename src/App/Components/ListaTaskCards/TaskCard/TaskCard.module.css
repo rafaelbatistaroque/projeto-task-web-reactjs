@@ -1,17 +1,16 @@
 .taskCard{
+  flex:1;
   outline: none;
   border: none;
   cursor: pointer;
   min-width: 10rem;
-  max-width: 12rem;
-  height: 12rem;
+  max-width: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 1.25rem;
+  border-radius: .5rem;
   background-color: white;
-  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, .25);
   margin: .5rem 1rem .5rem 0;
   transition: .2s ease-out;
 }
@@ -53,7 +52,7 @@
   justify-content: space-between;
   width: 100%;
   padding: .2rem .5rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .prazoEStatusTaskCard svg{
