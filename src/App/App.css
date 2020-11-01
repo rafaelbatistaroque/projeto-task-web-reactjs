@@ -69,6 +69,10 @@ a{
   animation: animarFadeInDeCima .3s forwards;
 }
 
+.sombra-box{
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, .3);
+}
+
 @keyframes animarFadeInDeCima{
   to{
     opacity: 1;
