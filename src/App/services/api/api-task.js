@@ -21,3 +21,15 @@ export const CRIAR_TASK = (body) => {
     },
   };
 };
+
+export const ATUALIZAR_TASK = (body, id) => {
+  return {
+    url: `${API_BASE}/task/${id}`,
+    options: {
+      method: "PUT",
+      headers: APP_JSON,
+      body: JSON.stringify(body),
+    },
+  };
+};
+

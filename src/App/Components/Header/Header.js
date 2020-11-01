@@ -12,11 +12,15 @@ const Header = () => {
           <TaskLogo />
         </NavLink>
         <div className={`${styles.menu} animarFadeInDeCima`}>
-          <NavLink to="/" end activeClassName={styles.active}>         
+          <NavLink to="/" end activeClassName={styles.active}>
             Início
           </NavLink>
-          <NavLink to="/task-detalhes" activeClassName={styles.active}>Nova Tarefa</NavLink>
-          <NavLink to="/sincronizar" activeClassName={styles.active}>Sincronizar</NavLink>
+          <NavLink to="/task/adicionar" activeClassName={styles.active}>
+            Nova Tarefa
+          </NavLink>
+          <NavLink to="/sincronizar" activeClassName={styles.active}>
+            Sincronizar
+          </NavLink>
           <Notificacao />
         </div>
       </nav>

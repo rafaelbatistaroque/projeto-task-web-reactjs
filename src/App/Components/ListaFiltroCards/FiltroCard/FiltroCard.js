@@ -11,6 +11,7 @@ const FiltroCard = ({ titulo, ...rest }) => {
 
   return (
     <button
+      type="button"
       className={`${styles.filtroCard} animarFadeInDeCima`}
       key={titulo}
       data-filtro={titulo}

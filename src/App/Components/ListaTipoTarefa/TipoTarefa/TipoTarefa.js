@@ -8,12 +8,12 @@ const TipoTarefa = ({ Icone, tipo, setValor, valor }) => {
 
   return (
     <button
-      className={`${tipo == valor ? styles.tipoTarefaAtiva : styles.tipoTarefa}`}
+      className={`${tipo === +valor ? styles.tipoTarefaAtiva : styles.tipoTarefa}`}
       data-tipo={tipo}
       onClick={handleClick}
     >
       {Icone}
-      {tipo == valor && valor}
+      {tipo === +valor && valor}
     </button>
   );
 };

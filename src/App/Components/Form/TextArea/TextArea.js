@@ -1,7 +1,15 @@
 import React from "react";
 import styles from "./TextArea.module.css";
 
-const TextArea = ({ label = false, linhas, nomeTextArea, quantidadeMaxCaracter, requirido = false, onChange }) => {
+const TextArea = ({
+  label = false,
+  linhas,
+  nomeTextArea,
+  quantidadeMaxCaracter,
+  requirido = false,
+  onChange,
+  valor,
+}) => {
   return (
     <div className={styles.textAreaContainer}>
       <textarea
@@ -11,6 +19,7 @@ const TextArea = ({ label = false, linhas, nomeTextArea, quantidadeMaxCaracter, 
         maxLength={quantidadeMaxCaracter}
         required={requirido}
         rows={linhas}
+        value={valor}
         onChange={onChange}
       ></textarea>
       <label className={styles.textAreaLabel} htmlFor={nomeTextArea}>

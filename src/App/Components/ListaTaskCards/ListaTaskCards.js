@@ -9,7 +9,7 @@ const ListaTaskCards = () => {
     <div className={`${styles.listaTask} container`}>
       <h1>{tituloTipoTarefa}</h1>
       <div className={styles.listaTaskCards}>
-        {tarefas && tarefas.map((tarefa) => <TaskCard key={tarefa._id} {...tarefa} />)}
+        {tarefas && tarefas.map((tarefa, index) => <TaskCard key={tarefa._id} indexTarefa={index} {...tarefa} />)}
       </div>
     </div>
   );
