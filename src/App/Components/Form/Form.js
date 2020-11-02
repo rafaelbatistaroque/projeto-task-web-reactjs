@@ -10,25 +10,26 @@ import ListaTipoTarefa from "../ListaTipoTarefa/ListaTipoTarefa";
 import { ATUALIZAR_TASK, CRIAR_TASK } from "../../services/api/api-task";
 import { useNavigate, useParams } from "react-router-dom";
 import { TaskContext } from "../../hooks/TaskContext";
+import { ENUM_SNACKBAR } from "../../utils/snackbarConfig";
+import { CRIAR_SNACKBAR, SnackbarContext } from "../../hooks/SnackbarContext";
 
 const Form = () => {
   const navegarPara = useNavigate();
   const { tarefas } = React.useContext(TaskContext);
-  const { index } = useParams();
-
-  React.useEffect(() => {
-    if (index) preencherFormularioParaEdicao({ ...tarefas[index] });
-    else limparCamposFormulario();
-  }, [index, tarefas]);
-
+  const { setSnackBarFactory } = React.useContext(SnackbarContext);
   const [idTarefa, setIdTarefa] = React.useState(null);
+  const { index } = useParams();
   const tipoTarefaForm = useForm();
   const tituloForm = useForm();
   const descricaoForm = useForm();
   const dataForm = useForm();
   const statusForm = useForm();
-
   let hoje = format(new Date(), "yyyy-MM-dd");
+
+  React.useEffect(() => {
+    if (index) preencherFormularioParaEdicao({ ...tarefas[index] });
+    else limparCamposFormulario();
+  }, [index, tarefas]);
 
   async function tratarAdicionar(e) {
     e.preventDefault();
@@ -44,7 +45,11 @@ const Form = () => {
     const promise = await fetch(url, options);
     const resposta = await promise.json();
 
-    console.log(resposta); //TODO:Criar notificaçõa de sucesso.
+    if (resposta.existeErro) {
+      return resposta.erros.forEach((erro) => exibirMensagemSnackbar(erro.mensagem, ENUM_SNACKBAR.TIPO.ERRO));
+    }
+
+    exibirMensagemSnackbar(resposta.data, ENUM_SNACKBAR.TIPO.SUCESSO);
     navegarPara("/");
   }
 
@@ -65,7 +70,10 @@ const Form = () => {
     const promise = await fetch(url, options);
     const resposta = await promise.json();
 
-    console.log(resposta); //TODO:Criar notificaçõa de sucesso.
+    if (resposta.existeErro) {
+      return resposta.erros.forEach((erro) => exibirMensagemSnackbar(erro.mensagem, ENUM_SNACKBAR.TIPO.ERRO));
+    }
+    exibirMensagemSnackbar(`Tarefa atualizada com sucesso`, ENUM_SNACKBAR.TIPO.SUCESSO);
     navegarPara("/");
   }
 
@@ -90,6 +98,11 @@ const Form = () => {
     statusForm.setValor(false);
   }
 
+  function exibirMensagemSnackbar(mensagem, tipo) {
+    const snack = CRIAR_SNACKBAR(mensagem, tipo, ENUM_SNACKBAR.POSICAO.ACIMA_DIREITA);
+    setSnackBarFactory(snack);
+  }
+
   return (
     <>
       <ListaTipoTarefa {...tipoTarefaForm} />
@@ -108,7 +121,11 @@ const Form = () => {
         <div className={styles.buttonsContainer}>
           {index && <Checkbox label="Concluída" nomeCheckbox="statusTarefa" {...statusForm} />}
           <Button tipoButton="submit" estiloBotao="enfase" tituloBotao="Adicionar" />
-          <Button tipoButton="button" tituloBotao="Cancelar" />
+          <Button
+            tipoButton="button"
+            tituloBotao="Cancelar"
+            onClick={() => exibirMensagemSnackbar("mensagem teste", 0)}
+          />
         </div>
       </form>
     </>
