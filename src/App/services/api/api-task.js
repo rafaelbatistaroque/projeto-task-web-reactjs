@@ -33,3 +33,13 @@ export const ATUALIZAR_TASK = (body, id) => {
   };
 };
 
+export const EXCLUIR_TASK = (body, id) => {
+  return {
+    url: `${API_BASE}/task/${id}`,
+    options: {
+      method: "DELETE",
+      headers: APP_JSON,
+      body: JSON.stringify(body),
+    },
+  };
+};

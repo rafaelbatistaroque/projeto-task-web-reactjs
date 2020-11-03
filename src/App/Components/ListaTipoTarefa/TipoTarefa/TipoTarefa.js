@@ -13,7 +13,6 @@ const TipoTarefa = ({ Icone, tipo, setValor, valor }) => {
       onClick={handleClick}
     >
       {Icone}
-      {tipo === +valor && valor}
     </button>
   );
 };
