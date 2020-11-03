@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import { ReactComponent as TaskLogo } from "../../assets/Logo.svg";
 import { NavLink } from "react-router-dom";
-import Notificacao from "../Notificacao/Notificacao";
+import ContadorTaskAtrasada from "../Notificacao/ContadorTaskAtrasada/ContadorTaskAtrasada";
 
 const Header = () => {
   return (
@@ -21,7 +21,7 @@ const Header = () => {
           <NavLink to="/sincronizar" activeClassName={styles.active}>
             Sincronizar
           </NavLink>
-          <Notificacao />
+          <ContadorTaskAtrasada />
         </div>
       </nav>
     </header>

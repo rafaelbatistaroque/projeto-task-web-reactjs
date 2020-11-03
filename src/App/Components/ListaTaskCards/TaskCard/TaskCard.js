@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TaskCard.module.css";
 import { format } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
-import { IconesTipoTarefa, IconesStatusTarefa } from "../../../utils/IconesTarefa";
+import { IconesTipoTarefa, IconesStatusTarefa } from "../../../services/utils/IconesTarefa";
 import { useNavigate } from "react-router-dom";
 
 const TaskCard = ({ titulo, quando, tipo, feito, indexTarefa }) => {

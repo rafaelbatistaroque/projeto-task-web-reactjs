@@ -1,6 +1,6 @@
 import React from "react";
 import { SnackbarContext } from "../../../hooks/SnackbarContext";
-import { POSICAO_NOMINAL, SNACKBAR_CONFIG_POSICAO, SNACKBAR_CONFIG_TIPO } from "../../../utils/snackbarConfig";
+import { POSICAO_NOMINAL, SNACKBAR_CONFIG_POSICAO, SNACKBAR_CONFIG_TIPO } from "../../../services/utils/snackbarConfig";
 import styles from "./Snackbar.module.css";
 
 const Snackbar = () => {

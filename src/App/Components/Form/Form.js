@@ -10,7 +10,7 @@ import ListaTipoTarefa from "../ListaTipoTarefa/ListaTipoTarefa";
 import { ATUALIZAR_TASK, CRIAR_TASK } from "../../services/api/api-task";
 import { useNavigate, useParams } from "react-router-dom";
 import { TaskContext } from "../../hooks/TaskContext";
-import { ENUM_SNACKBAR, CRIAR_SNACK } from "../../utils/snackbarConfig";
+import { ENUM_SNACKBAR, CRIAR_SNACK } from "../../services/utils/snackbarConfig";
 import { SnackbarContext } from "../../hooks/SnackbarContext";
 
 const Form = () => {
