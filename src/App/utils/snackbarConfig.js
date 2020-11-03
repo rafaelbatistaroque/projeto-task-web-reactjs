@@ -106,3 +106,20 @@ export const POSICAO_NOMINAL = {
   ABAIXO: "abaixo",
   ACIMA: "acima",
 };
+
+/**
+ * @param {[string]} mensagem [Mensagem que aparecerá no corpo da snackbar]
+ * @param {[Number]} tipo   [0: (Default) Default, 1: Sucesso, 2: Erro, 3: Informação, 4: Alerta]
+ * @param {[Number]} posicao   [0: (Default) Acima-Esquerda, 1: Acima-Centro, 2: Acima-Direita, 3: Abaixo-Esquerda, 4: Abaixo-Centro, 5: Abaixo-Direita]
+ * @param {[Number]} duracaoSegundos   [Tempo que o snack permanecerá aberto]
+ * @param {[string]} textoBotao [Texto da callAction]
+ */
+export const CRIAR_SNACK = (mensagem, tipo = 0, posicao, duracaoSegundos, textoBotao = false) => {
+  return {
+    mensagem: mensagem.length === 0 || !mensagem ? "Escreva sua mensagem aqui!" : mensagem,
+    tipo: tipo >= 0 && tipo < 5 ? tipo : 0,
+    posicao: posicao >= 0 && posicao < 6 ? posicao : 0,
+    textoBotao,
+    duracaoSegundos: duracaoSegundos < 1 || !duracaoSegundos ? 4 : duracaoSegundos,
+  };
+};

@@ -43,4 +43,5 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Home
     - ✔️ Adicionar Tarefa
     - ❌ Sincronizar Tarefa
-  - ❌ ...
+  - ❌ Services
+    - ✔️ Notificação Snackbar

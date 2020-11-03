@@ -9,14 +9,14 @@
   align-items: center;
   padding: .75rem;
   margin: 1rem;
-  max-width: 50vw;
-  min-width: 30rem;
+  max-width: 70vw;
+  min-width: 10rem;
   border-radius: .3rem;
   opacity: 0;
 }
 
 .snackbar[posicao-nominal~="acima"]{
-  animation: animarSnackAcima .3s ease-out forwards;
+  animation: animarSnackAcima .3s forwards;
 }
 
 .snackbar[posicao-nominal~="abaixo"]{
@@ -36,13 +36,13 @@
 @keyframes animarSnackAcima{
   to{
     opacity: initial;
-    transform: translateY(+.5rem);
+    transform: translateY(+1rem);
   }
 }
 
 @keyframes animarSnackAbaixo{
   to{
     opacity: initial;
-    transform: translateY(-2rem);
+    transform: translateY(-1rem);
   }
 }

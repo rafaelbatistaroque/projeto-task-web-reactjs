@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Form from "../components/Form/Form";
-import Snackbar from "../services/Snackbar/Snackbar";
+import Snackbar from "../services/mensagens/snackbar/Snackbar";
 import HomePage from "../views/Home/HomePage";
 import QRCodePage from "../views/QRCode/QRCodePage";
 import TaskDetalhesPage from "../views/TaskDetalhes/TaskDetalhesPage";

@@ -1,6 +1,6 @@
 import React from "react";
-import { SnackbarContext } from "../../hooks/SnackbarContext";
-import { POSICAO_NOMINAL, SNACKBAR_CONFIG_POSICAO, SNACKBAR_CONFIG_TIPO } from "../../utils/snackbarConfig";
+import { SnackbarContext } from "../../../hooks/SnackbarContext";
+import { POSICAO_NOMINAL, SNACKBAR_CONFIG_POSICAO, SNACKBAR_CONFIG_TIPO } from "../../../utils/snackbarConfig";
 import styles from "./Snackbar.module.css";
 
 const Snackbar = () => {
@@ -37,7 +37,7 @@ const Snackbar = () => {
   }
 
   function obterPosicaoNominalParaAnimacao() {
-    return posicao > 2 ? POSICAO_NOMINAL.ABAIXO : POSICAO_NOMINAL.ACIMA;
+    return posicao >= 3 && posicao < 6 ? POSICAO_NOMINAL.ABAIXO : POSICAO_NOMINAL.ACIMA;
   }
 
   return (
