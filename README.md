@@ -32,7 +32,7 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Obter tarefas com/sem filtro
     - ✔️ Adicionar tarefa
     - ✔️ Editar tarefa
-    - ❌ Excluir tarefa
+    - ✔️ Excluir tarefa
     - ❌ Sincronizar tarefa
   - ✔️ Rotas
     - ✔️ Página Home
@@ -45,3 +45,4 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ❌ Sincronizar Tarefa
   - ❌ Services
     - ✔️ Notificação Snackbar
+    - ✔️ Confirmar exclusão com dois cliques
