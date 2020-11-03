@@ -10,8 +10,8 @@ import ListaTipoTarefa from "../ListaTipoTarefa/ListaTipoTarefa";
 import { ATUALIZAR_TASK, CRIAR_TASK } from "../../services/api/api-task";
 import { useNavigate, useParams } from "react-router-dom";
 import { TaskContext } from "../../hooks/TaskContext";
-import { ENUM_SNACKBAR } from "../../utils/snackbarConfig";
-import { CRIAR_SNACKBAR, SnackbarContext } from "../../hooks/SnackbarContext";
+import { ENUM_SNACKBAR, CRIAR_SNACK } from "../../utils/snackbarConfig";
+import { SnackbarContext } from "../../hooks/SnackbarContext";
 
 const Form = () => {
   const navegarPara = useNavigate();
@@ -99,7 +99,7 @@ const Form = () => {
   }
 
   function exibirMensagemSnackbar(mensagem, tipo) {
-    const snack = CRIAR_SNACKBAR(mensagem, tipo, ENUM_SNACKBAR.POSICAO.ACIMA_DIREITA);
+    const snack = CRIAR_SNACK(mensagem, tipo, ENUM_SNACKBAR.POSICAO.ACIMA_DIREITA);
     setSnackBarFactory(snack);
   }
 
@@ -124,7 +124,7 @@ const Form = () => {
           <Button
             tipoButton="button"
             tituloBotao="Cancelar"
-            onClick={() => exibirMensagemSnackbar("mensagem teste", 0)}
+            onClick={() => exibirMensagemSnackbar("Teste de mensagem", 5)}
           />
         </div>
       </form>
