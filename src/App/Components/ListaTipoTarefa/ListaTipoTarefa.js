@@ -1,5 +1,5 @@
 import React from "react";
-import { IconesTipoTarefa } from "../../utils/IconesTarefa";
+import { IconesTipoTarefa } from "../../services/utils/IconesTarefa";
 import styles from "./ListaTipoTarefa.module.css";
 import TipoTarefa from "./TipoTarefa/TipoTarefa";
 
