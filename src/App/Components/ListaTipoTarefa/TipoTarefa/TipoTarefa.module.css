@@ -17,6 +17,7 @@
   height: 3rem;
 }
 
+.tipoTarefaAtiva,
 .tipoTarefa:hover{
   transform: scale(1.15);
 }

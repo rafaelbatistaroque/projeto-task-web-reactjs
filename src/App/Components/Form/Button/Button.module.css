@@ -1,5 +1,6 @@
 .button{
-  width: 8.5rem;
+  max-width: 17rem;
+  min-width: 8.5rem;
   border-radius: 4px;
   color: white;
   outline: none;

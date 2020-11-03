@@ -116,7 +116,7 @@ export const POSICAO_NOMINAL = {
  */
 export const CRIAR_SNACK = (mensagem, tipo = 0, posicao, duracaoSegundos, textoBotao = false) => {
   return {
-    mensagem: mensagem.length === 0 || !mensagem ? "Escreva sua mensagem aqui!" : mensagem,
+    mensagem: !mensagem || mensagem.length === 0 ? "Escreva sua mensagem aqui!" : mensagem,
     tipo: tipo >= 0 && tipo < 5 ? tipo : 0,
     posicao: posicao >= 0 && posicao < 6 ? posicao : 0,
     textoBotao,
