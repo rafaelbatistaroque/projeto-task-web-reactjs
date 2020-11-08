@@ -15,6 +15,10 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
 - [history](https://reactrouter.com/web/api/history) - 5.0.0
 - [qrcode.react](https://www.npmjs.com/package/qrcode.react) - 1.0.0
 
+## 🖵 Screen
+
+![screen](https://user-images.githubusercontent.com/32230625/98460040-05610000-2177-11eb-98ca-72a0a86adfaa.gif)
+
 ## 🖥️ Features
 
 - ✔️ Front-WEB
@@ -49,3 +53,8 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Notificação Snackbar
     - ✔️ Confirmar exclusão com dois cliques
     - ✔️ Armazenar endereco mac no local storage
+
+## 🔫 Iniciar o projeto
+- Baixe as dependências do projeto digitando no terminal: `yarn install`.
+- inicie o servidor digitando: `yarn start`.
+- Baixe a API ([Aqui](https://github.com/rafaelbatistaroque/projeto_api_task)) e siga os procedimento de inicialização do projeto.

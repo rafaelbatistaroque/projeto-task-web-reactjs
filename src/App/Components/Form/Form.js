@@ -106,7 +106,7 @@ const Form = () => {
   }
 
   function exibirMensagemSnackbar(mensagem, tipo) {
-    const snack = CRIAR_SNACK(mensagem, tipo, ENUM_SNACKBAR.POSICAO.ABAIXO_DIREITA);
+    const snack = CRIAR_SNACK(mensagem, tipo, ENUM_SNACKBAR.POSICAO.ABAIXO_CENTRO);
     setSnackBarFactory(snack);
   }
 
