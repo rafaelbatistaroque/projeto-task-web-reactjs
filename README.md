@@ -27,6 +27,7 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Notificação
     - ✔️ Lista de ícones de tipo Tarefa 
     - ✔️ Form Adicionar/editar Tarefa
+    - ✔️ Item menu - Logout
     - ❌ ...
   - ❌ Comunicação API ([Clique Aqui](https://github.com/rafaelbatistaroque/projeto_api_task))
     - ✔️ Obter tarefas com/sem filtro
@@ -39,10 +40,12 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Página Adicionar Tarefa
     - ✔️ Página Sincronizar Tarefa
     - ✔️ Menu - navegação
-  - ❌ Pages
+    - ✔️ Tratamento de autenticação
+  - ✔️ Pages
     - ✔️ Home
     - ✔️ Adicionar Tarefa
-    - ❌ Sincronizar Tarefa
+    - ✔️ Sincronizar Tarefa
   - ❌ Services
     - ✔️ Notificação Snackbar
     - ✔️ Confirmar exclusão com dois cliques
+    - ❌ Armazenar endereco mac no local storage
