@@ -3,7 +3,7 @@
 
 ## ⌛ Status do Projeto
 
-> 🚧 Em desenvolvimento... 👷🏼
+> 🏆 Concluído ✔️
 
 ## 🎯  Objetivo
 
@@ -13,28 +13,28 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
 
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start) - 6.0.0-beta.0
 - [history](https://reactrouter.com/web/api/history) - 5.0.0
+- [qrcode.react](https://www.npmjs.com/package/qrcode.react) - 1.0.0
 
 ## 🖥️ Features
 
-- ❌ Front-WEB
+- ✔️ Front-WEB
   - ✔️ Estrutura inicial
     - ✔️ Assets
     - ✔️ Header
     - ✔️ Footer
-  - ❌ Componentes
+  - ✔️ Componentes
     - ✔️ Lista de Filtros
     - ✔️ Cards de Tarefas
     - ✔️ Notificação
     - ✔️ Lista de ícones de tipo Tarefa 
     - ✔️ Form Adicionar/editar Tarefa
     - ✔️ Item menu - Logout
-    - ❌ ...
-  - ❌ Comunicação API ([Clique Aqui](https://github.com/rafaelbatistaroque/projeto_api_task))
+  - ✔️ Comunicação API ([Clique Aqui](https://github.com/rafaelbatistaroque/projeto_api_task))
     - ✔️ Obter tarefas com/sem filtro
     - ✔️ Adicionar tarefa
     - ✔️ Editar tarefa
     - ✔️ Excluir tarefa
-    - ❌ Sincronizar tarefa
+    - ✔️ Sincronizar tarefa
   - ✔️ Rotas
     - ✔️ Página Home
     - ✔️ Página Adicionar Tarefa
@@ -45,7 +45,7 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
     - ✔️ Home
     - ✔️ Adicionar Tarefa
     - ✔️ Sincronizar Tarefa
-  - ❌ Services
+  - ✔️ Services
     - ✔️ Notificação Snackbar
     - ✔️ Confirmar exclusão com dois cliques
-    - ❌ Armazenar endereco mac no local storage
+    - ✔️ Armazenar endereco mac no local storage

@@ -12,8 +12,10 @@ import { TaskContext } from "../../hooks/TaskContext";
 import { SnackbarContext } from "../../hooks/SnackbarContext";
 import { ENUM_SNACKBAR, CRIAR_SNACK } from "../../services/utils/snackbarConfig";
 import { ATUALIZAR_TASK, CRIAR_TASK, EXCLUIR_TASK } from "../../services/api/api-task";
+import { LogoutContext } from "../../hooks/LogoutContext";
 
 const Form = () => {
+  const { ehLogado } = React.useContext(LogoutContext);
   const navegarPara = useNavigate();
   const { tarefas } = React.useContext(TaskContext);
   const { setSnackBarFactory } = React.useContext(SnackbarContext);
@@ -38,7 +40,7 @@ const Form = () => {
     e.preventDefault();
 
     let { url, options } = CRIAR_TASK({
-      enderecomac: "44:44:44:44:44:44",
+      enderecomac: ehLogado,
       tipo: tipoTarefaForm.valor,
       titulo: tituloForm.valor,
       descricao: descricaoForm.valor,
@@ -61,7 +63,7 @@ const Form = () => {
 
     let { url, options } = ATUALIZAR_TASK(
       {
-        enderecomac: "44:44:44:44:44:44",
+        enderecomac: ehLogado,
         tipo: tipoTarefaForm.valor,
         titulo: tituloForm.valor,
         descricao: descricaoForm.valor,
@@ -120,7 +122,7 @@ const Form = () => {
   async function confirmacaoExclusao() {
     let { url, options } = EXCLUIR_TASK(
       {
-        enderecomac: "44:44:44:44:44:44",
+        enderecomac: ehLogado,
       },
       idTarefa
     );

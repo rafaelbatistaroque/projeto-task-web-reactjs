@@ -12,15 +12,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Task>
           <SnackbarProvider>
             <LogoutProvider>
-              <Header />
-                <Rotas />
-              <Footer />
+              <Task>
+                <Header />
+                  <Rotas />
+                <Footer />
+              </Task>
             </LogoutProvider>
           </SnackbarProvider>
-        </Task>
       </BrowserRouter>
     </>
   );
