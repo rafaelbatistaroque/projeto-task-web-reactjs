@@ -1,11 +1,12 @@
 import React from "react";
 import ListaFiltroCards from "../../components/ListaFiltroCards/ListaFiltroCards";
 import ListaTaskCards from "../../components/ListaTaskCards/ListaTaskCards";
+import { LogoutContext } from "../../hooks/LogoutContext";
 import styles from "./HomePage.module.css";
 
 const Home = () => {
    return (
-     <section className={`${styles.home}`}>
+     <section className={`${styles.home} container`}>
        <ListaFiltroCards />
        <ListaTaskCards />
      </section>

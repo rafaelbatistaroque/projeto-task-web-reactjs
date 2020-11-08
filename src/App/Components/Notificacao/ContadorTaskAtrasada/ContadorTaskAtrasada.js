@@ -24,7 +24,7 @@ const ContadorTaskAtrasada = () => {
 
   return (
     <div className={styles.notificacao}>
-      {tarefasAtrasadas.length ? (
+      {tarefasAtrasadas && tarefasAtrasadas.length ? (
         <span data-notificacao={tarefasAtrasadas.length} onClick={handleTarefasAtrasadas}>
           <NotificacaoIcone />
         </span>

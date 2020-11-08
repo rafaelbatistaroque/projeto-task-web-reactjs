@@ -6,18 +6,21 @@ import Header from "./components/Header/Header";
 import { Task } from "./hooks/TaskContext";
 import Rotas from "./routes/Rotas";
 import {SnackbarProvider} from './hooks/SnackbarContext'
+import { LogoutProvider } from "./hooks/LogoutContext";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Task>
           <SnackbarProvider>
-            <Header />
-              <Rotas />
-            <Footer />
+            <LogoutProvider>
+              <Task>
+                <Header />
+                  <Rotas />
+                <Footer />
+              </Task>
+            </LogoutProvider>
           </SnackbarProvider>
-        </Task>
       </BrowserRouter>
     </>
   );

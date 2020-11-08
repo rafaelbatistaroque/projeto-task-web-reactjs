@@ -1,0 +1,28 @@
+.qrcodepage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 6rem);
+}
+
+.conteudoQr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conteudoQr > *:last-child{
+  margin: 1rem 0 ;
+}
+
+.validacao{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.validacao input{
+  text-transform: uppercase;
+}

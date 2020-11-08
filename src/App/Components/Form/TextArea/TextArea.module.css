@@ -4,18 +4,48 @@
 }
 
 .inputTextArea{
+  width: 100%;
   background: #f1f1f1;
   resize: none;
   font-size: 1.2rem;
   padding: .5rem;
+  border: 0;
+  border-bottom: 2px solid var(--texto-preto);
+  outline: none;
+  transition: .2s ease-in-out;
+  resize: none;
+  font-size: 1.5rem;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+.textAreaLabel{
+  width: 100%;
+  top: 0; left: .5rem; right: 0;
+  color: var(--texto-preto);
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  cursor: text;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
+}
+
+
+.inputTextArea:valid,
+.inputTextArea:focus{
+  border-bottom: 2px solid var(--cor-secundaria);
 }
 
 .inputTextArea:valid + .textAreaLabel,
 .inputTextArea:focus + .textAreaLabel{
+  color: var(--cor-secundaria);
+  font-size: .8rem;
   top: -25px; left: 0;
+  pointer-events: none;
 }
 
-.inputTextArea:invalid
-.inputTextArea:not(:focus){
+.inputTextArea:invalid,
+.inputTextArea::not(:focus){
   border-bottom: 2px solid var(--cor-erro);
 }

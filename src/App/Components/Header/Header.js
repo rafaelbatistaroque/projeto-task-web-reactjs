@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import { ReactComponent as TaskLogo } from "../../assets/Logo.svg";
 import { NavLink } from "react-router-dom";
 import ContadorTaskAtrasada from "../Notificacao/ContadorTaskAtrasada/ContadorTaskAtrasada";
+import Logout from "../Logout/Logout";
 
 const Header = () => {
   return (
@@ -18,9 +19,7 @@ const Header = () => {
           <NavLink to="/task/adicionar" activeClassName={styles.active}>
             Nova Tarefa
           </NavLink>
-          <NavLink to="/sincronizar" activeClassName={styles.active}>
-            Sincronizar
-          </NavLink>
+          <Logout to="/sincronizar" activeClassName={styles.active} />
           <ContadorTaskAtrasada />
         </div>
       </nav>

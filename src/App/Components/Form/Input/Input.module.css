@@ -5,9 +5,26 @@
 
 .inputElement{
   background: transparent;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--texto-preto);
+  outline: none;
+  transition: .2s ease-in-out;
+  resize: none;
+  font-size: 1.5rem;
+  padding: .5rem;
+  box-sizing: border-box;
 }
 
 .inputLabel{
+  top: 0; left: .5rem; right: 0;
+  color: var(--texto-preto);
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  cursor: text;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
   padding-bottom: .2rem;
 }
 
@@ -15,4 +32,42 @@
 .inputLabel{
   height: 2.5rem;
   font-size: 1rem;
+}
+
+.inputElement:invalid,
+.inputElement::not(:focus){
+  border-bottom: 2px solid var(--cor-erro);
+}
+
+.inputElement:not(:placeholder-shown) + .inputLabel,
+.inputElement:focus + .inputLabel{
+  color: var(--cor-secundaria);
+  font-size: .8rem;
+  top: -30px; left: 0;
+  pointer-events: none;
+}
+
+.inputElement[type="date"]:valid,
+.inputElement[type="date"]:focus{
+  color: var(--cor-secundaria);
+  font-family: var( --font-principal);
+}
+
+.inputElement:valid,
+.inputElement:focus{
+  border-bottom: 2px solid var(--cor-secundaria);
+}
+
+.inputElement::-webkit-calendar-picker-indicator{
+  background: url("../../../assets/calendario.svg") no-repeat;
+  width: 1rem;
+  height: 1rem;
+  padding: .5rem;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-out;
+}
+
+.inputElement::-webkit-calendar-picker-indicator:hover{
+  transform: scale(1.1);
 }
