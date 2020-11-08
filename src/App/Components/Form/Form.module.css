@@ -11,6 +11,11 @@
   margin-top: 2rem;
 }
 
+.cabecalhoForm{
+  padding-top: 1rem;
+  text-align: center;
+}
+
 .buttonsContainer{
   display: flex;
   justify-content: flex-end;

@@ -144,7 +144,7 @@ const Form = () => {
     <>
       <ListaTipoTarefa {...tipoTarefaForm} />
       <form onSubmit={(index && tratarAtualizar) || tratarAdicionar} className={`${styles.form} animarFadeInDeCima`}>
-        <h3>{(index && "Editar") || "Nova"}</h3>
+        <h3 className={styles.cabecalhoForm}>{(index && "Editar Tarefa") || "Nova Tarefa"}</h3>
         <Input label="Título" nomeInput="titulo" requirido={true} {...tituloForm} />
         <TextArea
           label="Descrição"
