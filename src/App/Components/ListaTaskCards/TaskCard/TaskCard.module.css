@@ -17,6 +17,7 @@
 
 .taskCard:hover{
   transform: scale(1.05);
+  box-shadow: var(--sombra-projetada-hover);
 }
 
 .taskCard:active{
@@ -67,7 +68,7 @@
 }
 .prazo span:first-child{
   font-weight: 300;
-  line-height: .2rem;
+  line-height: .5rem;
 }
 
 .prazo span:last-child{

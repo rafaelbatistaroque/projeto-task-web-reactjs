@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Form.module.css";
 import Input from "./Input/Input";
 import TextArea from "./TextArea/TextArea";
-import { format, getMonth, subMonths } from "date-fns";
+import { format, subMonths } from "date-fns";
 import Button from "./Button/Button";
 import Checkbox from "./Checkbox/Checkbox";
 import useForm from "../../hooks/useForm";
@@ -104,7 +104,7 @@ const Form = () => {
   }
 
   function exibirMensagemSnackbar(mensagem, tipo) {
-    const snack = CRIAR_SNACK(mensagem, tipo, ENUM_SNACKBAR.POSICAO.ACIMA_DIREITA);
+    const snack = CRIAR_SNACK(mensagem, tipo, ENUM_SNACKBAR.POSICAO.ABAIXO_DIREITA);
     setSnackBarFactory(snack);
   }
 
@@ -113,7 +113,7 @@ const Form = () => {
   }
 
   function tratarExcluir() {
-    setTextoConfirmacaoExclusao("Clique de novo");
+    setTextoConfirmacaoExclusao("Tem certeza?");
     setEhConfirmacaoExclusao(true);
   }
 
@@ -161,7 +161,7 @@ const Form = () => {
         />
         <div className={styles.buttonsContainer}>
           {index && <Checkbox label="Concluída" nomeCheckbox="statusTarefa" {...statusForm} />}
-          <Button tipoButton="submit" estiloBotao="enfase" tituloBotao="Adicionar" />
+          <Button tipoButton="submit" estiloBotao="enfase" tituloBotao={(index && "Atualizar") || "Adicionar"} />
           <Button
             tipoButton="button"
             tituloBotao={(index && textoConfirmacaoExclusao) || "Cancelar"}

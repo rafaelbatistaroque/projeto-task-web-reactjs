@@ -1,7 +1,7 @@
 .filtroCard{
   outline: none;
   border: none;
-  margin: 0 2rem 0 0;
+  margin: .5rem;
   min-width: 10rem;
   height: 4rem;
   background: var(--cor-secundaria);

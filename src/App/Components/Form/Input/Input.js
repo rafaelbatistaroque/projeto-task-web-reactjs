@@ -12,6 +12,7 @@ const Input = ({ label, tipoInput = "text", minParaData, valor, nomeInput, requi
         value={valor}
         min={minParaData}
         onChange={onChange}
+        placeholder=" "
         required={requirido}
       />
       {label && (

@@ -4,7 +4,8 @@ import FiltroCard from "./FiltroCard/FiltroCard";
 import styles from "./ListaFiltroCards.module.css";
 
 const ListaFiltroCards = () => {
-  const { obterTarefas } = React.useContext(TaskContext);
+  const { obterTarefas, obterTarefasAtrasadas } = React.useContext(TaskContext);
+  const parametrosAtrasadas = { titulo: "Atrasadas", endPoint: "atrasadas", enderecoMac: "44:44:44:44:44:44" };
   const filtros = [
     { titulo: "Todas", endPoint: "todas", enderecoMac: "44:44:44:44:44:44" },
     { titulo: "Hoje", endPoint: "hoje", enderecoMac: "44:44:44:44:44:44" },
@@ -15,10 +16,11 @@ const ListaFiltroCards = () => {
 
   React.useEffect(() => {
     obterTarefas({ ...filtros[0] });
+    obterTarefasAtrasadas(parametrosAtrasadas);
   }, []);
 
   return (
-    <div className={`${styles.listaFiltroCards} container`}>
+    <div className={`${styles.listaFiltroCards}`}>
       {filtros.map((filtro, index) => (
         <FiltroCard key={index} {...filtro} />
       ))}

@@ -7,6 +7,7 @@
   --texto-preto: #333;
   --font-principal: Poppins, Helvetica, Arial, sans-serif;
   --font_secundaria: 'Spectral', Georgia;
+  --sombra-projetada-hover: 15px 20px 36px -10px rgba(0, 0, 0, .25);
 }
 
 *{
