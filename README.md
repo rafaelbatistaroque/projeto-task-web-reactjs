@@ -19,6 +19,17 @@ O Projeto tem como objetivo aprimorar habilidades pessoais em front-end com Reac
 
 ![screen](https://user-images.githubusercontent.com/32230625/98460040-05610000-2177-11eb-98ca-72a0a86adfaa.gif)
 
+## 🎨 Paleta de Cores
+- ![#020873](https://via.placeholder.com/15/020873/020873?Text=+)` cor-primaria: #020873`
+- ![#575FFF](https://via.placeholder.com/15/575FFF/575FFF?Text=+)` cor-secundaria: #575FFF`
+- ![#60D16F](https://via.placeholder.com/15/60D16F/60D16F?Text=+)` cor-enfase: #60D16F`
+- ![#e65757](https://via.placeholder.com/15/e65757/e65757?Text=+)` cor-erro: #e65757`
+- ![#f8f8f8](https://via.placeholder.com/15/f8f8f8/f8f8f8?Text=+)` cor-background-body: #f8f8f8`
+- ![#333333](https://via.placeholder.com/15/333333/333333?Text=+)` cor-texto: #333333`
+
+## 𝓐 Tipografia
+- Poppins
+
 ## 🖥️ Features
 
 - ✔️ Front-WEB
